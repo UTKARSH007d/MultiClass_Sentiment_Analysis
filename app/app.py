@@ -29,7 +29,7 @@ st.set_page_config(
 # ==========================
 
 model = joblib.load(
-    "models/random_forest_model.pkl"
+    "models/logistic_regression_model.pkl"
 )
 
 vectorizer = joblib.load(
@@ -91,7 +91,7 @@ st.sidebar.success("Internship Project")
 st.title("🎯 Multi-Class Sentiment Analysis")
 
 st.caption(
-    "NLP • TF-IDF • Random Forest • Streamlit"
+    "NLP • TF-IDF • Machine Learning • Streamlit"
 )
 
 st.write(
@@ -238,7 +238,7 @@ with col1:
 
 with col2:
     st.warning(
-        "Neutral:\n\nVersion 2.0 was released today."
+        "Neutral:\n\nThe event starts at 6 PM."
     )
 
 with col3:

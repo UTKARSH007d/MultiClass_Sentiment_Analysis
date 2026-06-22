@@ -57,7 +57,10 @@ lr_model.fit(X_train, y_train)
 lr_pred = lr_model.predict(X_test)
 
 lr_accuracy = accuracy_score(y_test, lr_pred)
-
+joblib.dump(
+    lr_model,
+    "models/logistic_regression_model.pkl"
+)
 
 # -------------------------------
 # Naive Bayes
